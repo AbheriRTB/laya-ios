@@ -66,10 +66,10 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     
     var tamburiSound: AVAudioPlayer?
     var mridangaSound: AVAudioPlayer?
-    var talaSelected = "aditala"
+    var talaSelected = "Aditala"
     var shrutiSelected:String = "C"
     var swaraSelected = "sa"
-    var kalaSelected = "m"
+    var kalaSelected = "Madhyama"
     var bpmSelected = "80"
     var mridangamVolume:Float = 0.5
     var shrutiVolume:Float = 0.5
@@ -173,6 +173,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         }
         
         KalaLabel.text = kalaSelected
+        StopAudio(self)
     }
     
     //-------------- SHRUTI Functions ------------------------
@@ -313,20 +314,20 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     func getTalaFileName(tala:String)->String{
         var fileName:String="aditala_c_m_80.mp3";
         let shruti = shrutiMapping[shrutiSelected]!
-        let kala = kalaMap[kalaSelected]
+        let kala = kalaMap[kalaSelected]!
         
         switch(tala.trimmingCharacters(in: .whitespaces)){
         case "Aditala":
-            fileName = "aditala_\(shruti)_\(String(describing: kala))_\(bpmSelected).mp3"
+            fileName = "aditala_\(shruti)_\(kala)_\(bpmSelected).mp3"
             break
         case "Rupakatala":
-            fileName = "rupakatala_\(shruti)_\(String(describing: kala))_\(bpmSelected).mp3"
+            fileName = "rupakatala_\(shruti)_\(kala)_\(bpmSelected).mp3"
             break
         case "Mishrachapu":
-            fileName = "mishrachapu_\(shruti)_\(String(describing: kala))_\(bpmSelected).mp3"
+            fileName = "mishrachapu_\(shruti)_\(kala)_\(bpmSelected).mp3"
             break
         case "Khandachapu":
-            fileName = "khandachapu_\(shruti)_\(String(describing: kala))_\(bpmSelected).mp3"
+            fileName = "khandachapu_\(shruti)_\(kala)_\(bpmSelected).mp3"
             break
         case "Aditala Mohra Korvai":
             fileName = "aditala_mohra_korvai.mp3"
