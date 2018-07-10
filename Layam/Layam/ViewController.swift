@@ -311,6 +311,29 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         StopAudio(self)
     }
     
+    // set view for footer
+    func tableView(_ tableView: UITableView, viewForFooterInSection section: Int) -> UIView? {
+        let footerView = UIView(frame: CGRect(x: 0, y: 0, width: tableView.frame.size.width, height: 20))
+        
+        let poweredLabel = UILabel(frame: CGRect(x:0, y:0, width: tableView.frame.size.width, height: 20))
+        footerView.addSubview(poweredLabel)
+        poweredLabel.font = poweredLabel.font.withSize(9)
+        poweredLabel.textAlignment = NSTextAlignment.right
+        if #available(iOS 11.0, *) {
+            poweredLabel.insetsLayoutMarginsFromSafeAr
+        } else {
+            // Fallback on earlier versions
+        }
+        poweredLabel.text="Powered by Team Abheri "
+        
+        return footerView
+    }
+    
+    // set height for footer
+    func tableView(_ tableView: UITableView, heightForFooterInSection section: Int) -> CGFloat {
+        return 20
+    }
+    
     func getTalaFileName(tala:String)->String{
         var fileName:String="aditala_c_m_80.mp3";
         let shruti = shrutiMapping[shrutiSelected]!
