@@ -38,6 +38,8 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     @IBOutlet var swaraUILabels:[UILabel]!
 
     @IBOutlet weak var Version: UILabel!
+    @IBOutlet weak var MridangaMute: UIImageView!
+    @IBOutlet weak var TamburiMute: UIImageView!
     
     //BPM Labels
     @IBOutlet weak var Bpm_70: UILabel!
@@ -101,6 +103,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         setBpmTapGestureRecognizer()
         
         setVersionLabel()
+        setMuteButtonTapGestureRecognizer()
         
     }
     
@@ -193,6 +196,36 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         
         KalaLabel.text = kalaSelected
         StopAudio(self)
+    }
+    
+    // -------------- MUTE Button Functions
+    func setMuteButtonTapGestureRecognizer(){
+        MridangaMute.isUserInteractionEnabled = true
+        MridangaMute.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(mridangaMuteClick(_:))))
+        
+        TamburiMute.isUserInteractionEnabled = true
+        TamburiMute.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(tamburiMuteClick(_:))))
+    }
+    @objc func mridangaMuteClick(_ gesture:UITapGestureRecognizer){
+        print("inside mridangaMuteClick")
+        if MridangaMute.backgroundColor==UIColor.purple{
+            MridangaMute.backgroundColor=UIColor.clear
+            mridangaSound?.volume = mridangamVolume
+        }else{
+            MridangaMute.backgroundColor=UIColor.purple
+            mridangaSound?.volume = 0
+        }
+    }
+    @objc func tamburiMuteClick(_ gesture:UITapGestureRecognizer){
+        print("inside tamburiMuteClick")
+        
+        if TamburiMute.backgroundColor==UIColor.purple{
+            TamburiMute.backgroundColor=UIColor.clear
+            tamburiSound?.volume = shrutiVolume
+        }else{
+            TamburiMute.backgroundColor=UIColor.purple
+            tamburiSound?.volume = 0
+        }
     }
     
     //-------------- SHRUTI Functions ------------------------
