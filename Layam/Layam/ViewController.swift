@@ -37,6 +37,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     //Swara UILabel Array
     @IBOutlet var swaraUILabels:[UILabel]!
 
+    @IBOutlet weak var Version: UILabel!
     
     //BPM Labels
     @IBOutlet weak var Bpm_70: UILabel!
@@ -98,11 +99,20 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         setShrutiTapGestureRecognizer()
         setSwaraTapGestureRecognizer()
         setBpmTapGestureRecognizer()
+        
+        setVersionLabel()
+        
     }
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    func setVersionLabel(){
+        if let version = Bundle.main.infoDictionary?["CFBundleShortVersionString"] as? String {
+            self.Version.text = version
+        }
     }
     
     //--------------- AUDIO FUNCTIONS --------------------------
@@ -131,6 +141,15 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         //let mridangaFileName = "aditala_a_m_70.mp3"
         let mridangaPath = Bundle.main.path(forResource: mridangaFileName, ofType:nil)!
         let mridangaUrl = URL(fileURLWithPath: mridangaPath)
+        
+        do {
+            try AVAudioSession.sharedInstance().setCategory(AVAudioSessionCategoryPlayback, with: .mixWithOthers)
+            print("Playback OK")
+            try AVAudioSession.sharedInstance().setActive(true)
+            print("Session is Active")
+        } catch {
+            print(error)
+        }
         
         do {
             tamburiSound = try AVAudioPlayer(contentsOf: shrutiUrl)
@@ -320,7 +339,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         poweredLabel.font = poweredLabel.font.withSize(9)
         poweredLabel.textAlignment = NSTextAlignment.right
         if #available(iOS 11.0, *) {
-            poweredLabel.insetsLayoutMarginsFromSafeAr
+            poweredLabel.insetsLayoutMarginsFromSafeArea = false
         } else {
             // Fallback on earlier versions
         }
