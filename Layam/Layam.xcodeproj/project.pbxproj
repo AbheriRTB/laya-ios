@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E801E2EC214E83900058A045 /* mute.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E801E2EB214E838F0058A045 /* mute.jpg */; };
+		E801E2EE214E83FE0058A045 /* mute.png in Resources */ = {isa = PBXBuildFile; fileRef = E801E2ED214E83FE0058A045 /* mute.png */; };
 		E807A99920EFE43700500DD6 /* playbutton.png in Resources */ = {isa = PBXBuildFile; fileRef = E807A99820EFE43700500DD6 /* playbutton.png */; };
 		E807A99B20EFE66600500DD6 /* playbutton_sm.png in Resources */ = {isa = PBXBuildFile; fileRef = E807A99A20EFE66500500DD6 /* playbutton_sm.png */; };
 		E807A99D20EFE66D00500DD6 /* pause_sm.png in Resources */ = {isa = PBXBuildFile; fileRef = E807A99C20EFE66D00500DD6 /* pause_sm.png */; };
@@ -692,6 +694,54 @@
 		E8E0C55D1FF525B700537320 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E8E0C55C1FF525B700537320 /* Assets.xcassets */; };
 		E8E0C5601FF525B700537320 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E8E0C55E1FF525B700537320 /* LaunchScreen.storyboard */; };
 		E8E0C56B1FF525B700537320 /* LayamTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8E0C56A1FF525B700537320 /* LayamTests.swift */; };
+		E8F24BA521759B660005B0A0 /* tishraadi_g_v_80.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E8F24B7521759AF40005B0A0 /* tishraadi_g_v_80.mp3 */; };
+		E8F24BA621759B660005B0A0 /* tishraadi_c_m_90.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E8F24B7621759AF70005B0A0 /* tishraadi_c_m_90.mp3 */; };
+		E8F24BA721759B660005B0A0 /* tishraadi_f_v_80.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E8F24B7721759AFC0005B0A0 /* tishraadi_f_v_80.mp3 */; };
+		E8F24BA821759B660005B0A0 /* tishraadi_a_v_80.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E8F24B7821759AFF0005B0A0 /* tishraadi_a_v_80.mp3 */; };
+		E8F24BA921759B660005B0A0 /* tishraadi_c_v_90.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E8F24B7921759B040005B0A0 /* tishraadi_c_v_90.mp3 */; };
+		E8F24BAA21759B660005B0A0 /* tishraadi_b_m_80.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E8F24B7A21759B0A0005B0A0 /* tishraadi_b_m_80.mp3 */; };
+		E8F24BAB21759B660005B0A0 /* tishraadi_cs_m_80.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E8F24B7B21759B0F0005B0A0 /* tishraadi_cs_m_80.mp3 */; };
+		E8F24BAC21759B660005B0A0 /* tishraadi_d_m_90.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E8F24B7C21759B110005B0A0 /* tishraadi_d_m_90.mp3 */; };
+		E8F24BAD21759B660005B0A0 /* tishraadi_f_m_90.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E8F24B7D21759B130005B0A0 /* tishraadi_f_m_90.mp3 */; };
+		E8F24BAE21759B660005B0A0 /* tishraadi_d_m_80.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E8F24B7E21759B150005B0A0 /* tishraadi_d_m_80.mp3 */; };
+		E8F24BAF21759B660005B0A0 /* tishraadi_as_m_90.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E8F24B7F21759B170005B0A0 /* tishraadi_as_m_90.mp3 */; };
+		E8F24BB021759B660005B0A0 /* tishraadi_d_v_90.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E8F24B8021759B1D0005B0A0 /* tishraadi_d_v_90.mp3 */; };
+		E8F24BB121759B660005B0A0 /* tishraadi_a_m_80.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E8F24B8121759B220005B0A0 /* tishraadi_a_m_80.mp3 */; };
+		E8F24BB221759B660005B0A0 /* tishraadi_b_v_80.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E8F24B8221759B2A0005B0A0 /* tishraadi_b_v_80.mp3 */; };
+		E8F24BB321759B660005B0A0 /* tishraadi_c_v_80.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E8F24B8321759B2C0005B0A0 /* tishraadi_c_v_80.mp3 */; };
+		E8F24BB421759B660005B0A0 /* tishraadi_ds_m_80.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E8F24B8421759B300005B0A0 /* tishraadi_ds_m_80.mp3 */; };
+		E8F24BB521759B660005B0A0 /* tishraadi_f_v_90.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E8F24B8521759B320005B0A0 /* tishraadi_f_v_90.mp3 */; };
+		E8F24BB621759B660005B0A0 /* tishraadi_fs_m_90.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E8F24B8621759B340005B0A0 /* tishraadi_fs_m_90.mp3 */; };
+		E8F24BB721759B660005B0A0 /* tishraadi_g_v_90.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E8F24B8721759B370005B0A0 /* tishraadi_g_v_90.mp3 */; };
+		E8F24BB821759B660005B0A0 /* tishraadi_gs_v_80.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E8F24B8821759B3C0005B0A0 /* tishraadi_gs_v_80.mp3 */; };
+		E8F24BB921759B660005B0A0 /* tishraadi_cs_m_90.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E8F24B8921759B410005B0A0 /* tishraadi_cs_m_90.mp3 */; };
+		E8F24BBA21759B660005B0A0 /* tishraadi_cs_v_90.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E8F24B8A21759B460005B0A0 /* tishraadi_cs_v_90.mp3 */; };
+		E8F24BBB21759B660005B0A0 /* tishraadi_ds_v_80.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E8F24B8B21759B470005B0A0 /* tishraadi_ds_v_80.mp3 */; };
+		E8F24BBC21759B660005B0A0 /* tishraadi_fs_v_90.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E8F24B8C21759B480005B0A0 /* tishraadi_fs_v_90.mp3 */; };
+		E8F24BBD21759B660005B0A0 /* tishraadi_f_m_80.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E8F24B8D21759B480005B0A0 /* tishraadi_f_m_80.mp3 */; };
+		E8F24BBE21759B660005B0A0 /* tishraadi_e_v_90.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E8F24B8E21759B4A0005B0A0 /* tishraadi_e_v_90.mp3 */; };
+		E8F24BBF21759B660005B0A0 /* tishraadi_ds_m_90.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E8F24B8F21759B4B0005B0A0 /* tishraadi_ds_m_90.mp3 */; };
+		E8F24BC021759B660005B0A0 /* tishraadi_gs_m_80.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E8F24B9021759B510005B0A0 /* tishraadi_gs_m_80.mp3 */; };
+		E8F24BC121759B660005B0A0 /* tishraadi_gs_m_90.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E8F24B9121759B530005B0A0 /* tishraadi_gs_m_90.mp3 */; };
+		E8F24BC221759B660005B0A0 /* tishraadi_as_v_90.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E8F24B9221759B530005B0A0 /* tishraadi_as_v_90.mp3 */; };
+		E8F24BC321759B660005B0A0 /* tishraadi_e_m_80.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E8F24B9321759B560005B0A0 /* tishraadi_e_m_80.mp3 */; };
+		E8F24BC421759B660005B0A0 /* tishraadi_b_v_90.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E8F24B9421759B570005B0A0 /* tishraadi_b_v_90.mp3 */; };
+		E8F24BC521759B660005B0A0 /* tishraadi_cs_v_80.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E8F24B9521759B570005B0A0 /* tishraadi_cs_v_80.mp3 */; };
+		E8F24BC621759B660005B0A0 /* tishraadi_fs_m_80.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E8F24B9621759B580005B0A0 /* tishraadi_fs_m_80.mp3 */; };
+		E8F24BC721759B660005B0A0 /* tishraadi_as_v_80.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E8F24B9721759B580005B0A0 /* tishraadi_as_v_80.mp3 */; };
+		E8F24BC821759B660005B0A0 /* tishraadi_c_m_80.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E8F24B9821759B5A0005B0A0 /* tishraadi_c_m_80.mp3 */; };
+		E8F24BC921759B660005B0A0 /* tishraadi_fs_v_80.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E8F24B9921759B5A0005B0A0 /* tishraadi_fs_v_80.mp3 */; };
+		E8F24BCA21759B660005B0A0 /* tishraadi_g_m_80.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E8F24B9A21759B5C0005B0A0 /* tishraadi_g_m_80.mp3 */; };
+		E8F24BCB21759B660005B0A0 /* tishraadi_d_v_80.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E8F24B9B21759B5C0005B0A0 /* tishraadi_d_v_80.mp3 */; };
+		E8F24BCC21759B660005B0A0 /* tishraadi_ds_v_90.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E8F24B9C21759B5C0005B0A0 /* tishraadi_ds_v_90.mp3 */; };
+		E8F24BCD21759B660005B0A0 /* tishraadi_b_m_90.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E8F24B9D21759B5D0005B0A0 /* tishraadi_b_m_90.mp3 */; };
+		E8F24BCE21759B660005B0A0 /* tishraadi_gs_v_90.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E8F24B9E21759B5D0005B0A0 /* tishraadi_gs_v_90.mp3 */; };
+		E8F24BCF21759B660005B0A0 /* tishraadi_as_m_80.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E8F24B9F21759B5D0005B0A0 /* tishraadi_as_m_80.mp3 */; };
+		E8F24BD021759B660005B0A0 /* tishraadi_e_v_80.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E8F24BA021759B610005B0A0 /* tishraadi_e_v_80.mp3 */; };
+		E8F24BD121759B660005B0A0 /* tishraadi_a_m_90.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E8F24BA121759B610005B0A0 /* tishraadi_a_m_90.mp3 */; };
+		E8F24BD221759B660005B0A0 /* tishraadi_a_v_90.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E8F24BA221759B620005B0A0 /* tishraadi_a_v_90.mp3 */; };
+		E8F24BD321759B660005B0A0 /* tishraadi_e_m_90.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E8F24BA321759B630005B0A0 /* tishraadi_e_m_90.mp3 */; };
+		E8F24BD421759B660005B0A0 /* tishraadi_g_m_90.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E8F24BA421759B630005B0A0 /* tishraadi_g_m_90.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -705,6 +755,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		E801E2EB214E838F0058A045 /* mute.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = mute.jpg; sourceTree = "<group>"; };
+		E801E2ED214E83FE0058A045 /* mute.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mute.png; sourceTree = "<group>"; };
 		E807A99820EFE43700500DD6 /* playbutton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = playbutton.png; sourceTree = "<group>"; };
 		E807A99A20EFE66500500DD6 /* playbutton_sm.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = playbutton_sm.png; sourceTree = "<group>"; };
 		E807A99C20EFE66D00500DD6 /* pause_sm.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pause_sm.png; sourceTree = "<group>"; };
@@ -1395,6 +1447,54 @@
 		E8E0C5661FF525B700537320 /* LayamTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LayamTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E8E0C56A1FF525B700537320 /* LayamTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LayamTests.swift; sourceTree = "<group>"; };
 		E8E0C56C1FF525B700537320 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E8F24B7521759AF40005B0A0 /* tishraadi_g_v_80.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = tishraadi_g_v_80.mp3; sourceTree = "<group>"; };
+		E8F24B7621759AF70005B0A0 /* tishraadi_c_m_90.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = tishraadi_c_m_90.mp3; sourceTree = "<group>"; };
+		E8F24B7721759AFC0005B0A0 /* tishraadi_f_v_80.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = tishraadi_f_v_80.mp3; sourceTree = "<group>"; };
+		E8F24B7821759AFF0005B0A0 /* tishraadi_a_v_80.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = tishraadi_a_v_80.mp3; sourceTree = "<group>"; };
+		E8F24B7921759B040005B0A0 /* tishraadi_c_v_90.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = tishraadi_c_v_90.mp3; sourceTree = "<group>"; };
+		E8F24B7A21759B0A0005B0A0 /* tishraadi_b_m_80.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = tishraadi_b_m_80.mp3; sourceTree = "<group>"; };
+		E8F24B7B21759B0F0005B0A0 /* tishraadi_cs_m_80.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = tishraadi_cs_m_80.mp3; sourceTree = "<group>"; };
+		E8F24B7C21759B110005B0A0 /* tishraadi_d_m_90.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = tishraadi_d_m_90.mp3; sourceTree = "<group>"; };
+		E8F24B7D21759B130005B0A0 /* tishraadi_f_m_90.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = tishraadi_f_m_90.mp3; sourceTree = "<group>"; };
+		E8F24B7E21759B150005B0A0 /* tishraadi_d_m_80.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = tishraadi_d_m_80.mp3; sourceTree = "<group>"; };
+		E8F24B7F21759B170005B0A0 /* tishraadi_as_m_90.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = tishraadi_as_m_90.mp3; sourceTree = "<group>"; };
+		E8F24B8021759B1D0005B0A0 /* tishraadi_d_v_90.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = tishraadi_d_v_90.mp3; sourceTree = "<group>"; };
+		E8F24B8121759B220005B0A0 /* tishraadi_a_m_80.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = tishraadi_a_m_80.mp3; sourceTree = "<group>"; };
+		E8F24B8221759B2A0005B0A0 /* tishraadi_b_v_80.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = tishraadi_b_v_80.mp3; sourceTree = "<group>"; };
+		E8F24B8321759B2C0005B0A0 /* tishraadi_c_v_80.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = tishraadi_c_v_80.mp3; sourceTree = "<group>"; };
+		E8F24B8421759B300005B0A0 /* tishraadi_ds_m_80.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = tishraadi_ds_m_80.mp3; sourceTree = "<group>"; };
+		E8F24B8521759B320005B0A0 /* tishraadi_f_v_90.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = tishraadi_f_v_90.mp3; sourceTree = "<group>"; };
+		E8F24B8621759B340005B0A0 /* tishraadi_fs_m_90.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = tishraadi_fs_m_90.mp3; sourceTree = "<group>"; };
+		E8F24B8721759B370005B0A0 /* tishraadi_g_v_90.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = tishraadi_g_v_90.mp3; sourceTree = "<group>"; };
+		E8F24B8821759B3C0005B0A0 /* tishraadi_gs_v_80.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = tishraadi_gs_v_80.mp3; sourceTree = "<group>"; };
+		E8F24B8921759B410005B0A0 /* tishraadi_cs_m_90.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = tishraadi_cs_m_90.mp3; sourceTree = "<group>"; };
+		E8F24B8A21759B460005B0A0 /* tishraadi_cs_v_90.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = tishraadi_cs_v_90.mp3; sourceTree = "<group>"; };
+		E8F24B8B21759B470005B0A0 /* tishraadi_ds_v_80.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = tishraadi_ds_v_80.mp3; sourceTree = "<group>"; };
+		E8F24B8C21759B480005B0A0 /* tishraadi_fs_v_90.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = tishraadi_fs_v_90.mp3; sourceTree = "<group>"; };
+		E8F24B8D21759B480005B0A0 /* tishraadi_f_m_80.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = tishraadi_f_m_80.mp3; sourceTree = "<group>"; };
+		E8F24B8E21759B4A0005B0A0 /* tishraadi_e_v_90.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = tishraadi_e_v_90.mp3; sourceTree = "<group>"; };
+		E8F24B8F21759B4B0005B0A0 /* tishraadi_ds_m_90.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = tishraadi_ds_m_90.mp3; sourceTree = "<group>"; };
+		E8F24B9021759B510005B0A0 /* tishraadi_gs_m_80.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = tishraadi_gs_m_80.mp3; sourceTree = "<group>"; };
+		E8F24B9121759B530005B0A0 /* tishraadi_gs_m_90.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = tishraadi_gs_m_90.mp3; sourceTree = "<group>"; };
+		E8F24B9221759B530005B0A0 /* tishraadi_as_v_90.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = tishraadi_as_v_90.mp3; sourceTree = "<group>"; };
+		E8F24B9321759B560005B0A0 /* tishraadi_e_m_80.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = tishraadi_e_m_80.mp3; sourceTree = "<group>"; };
+		E8F24B9421759B570005B0A0 /* tishraadi_b_v_90.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = tishraadi_b_v_90.mp3; sourceTree = "<group>"; };
+		E8F24B9521759B570005B0A0 /* tishraadi_cs_v_80.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = tishraadi_cs_v_80.mp3; sourceTree = "<group>"; };
+		E8F24B9621759B580005B0A0 /* tishraadi_fs_m_80.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = tishraadi_fs_m_80.mp3; sourceTree = "<group>"; };
+		E8F24B9721759B580005B0A0 /* tishraadi_as_v_80.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = tishraadi_as_v_80.mp3; sourceTree = "<group>"; };
+		E8F24B9821759B5A0005B0A0 /* tishraadi_c_m_80.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = tishraadi_c_m_80.mp3; sourceTree = "<group>"; };
+		E8F24B9921759B5A0005B0A0 /* tishraadi_fs_v_80.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = tishraadi_fs_v_80.mp3; sourceTree = "<group>"; };
+		E8F24B9A21759B5C0005B0A0 /* tishraadi_g_m_80.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = tishraadi_g_m_80.mp3; sourceTree = "<group>"; };
+		E8F24B9B21759B5C0005B0A0 /* tishraadi_d_v_80.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = tishraadi_d_v_80.mp3; sourceTree = "<group>"; };
+		E8F24B9C21759B5C0005B0A0 /* tishraadi_ds_v_90.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = tishraadi_ds_v_90.mp3; sourceTree = "<group>"; };
+		E8F24B9D21759B5D0005B0A0 /* tishraadi_b_m_90.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = tishraadi_b_m_90.mp3; sourceTree = "<group>"; };
+		E8F24B9E21759B5D0005B0A0 /* tishraadi_gs_v_90.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = tishraadi_gs_v_90.mp3; sourceTree = "<group>"; };
+		E8F24B9F21759B5D0005B0A0 /* tishraadi_as_m_80.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = tishraadi_as_m_80.mp3; sourceTree = "<group>"; };
+		E8F24BA021759B610005B0A0 /* tishraadi_e_v_80.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = tishraadi_e_v_80.mp3; sourceTree = "<group>"; };
+		E8F24BA121759B610005B0A0 /* tishraadi_a_m_90.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = tishraadi_a_m_90.mp3; sourceTree = "<group>"; };
+		E8F24BA221759B620005B0A0 /* tishraadi_a_v_90.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = tishraadi_a_v_90.mp3; sourceTree = "<group>"; };
+		E8F24BA321759B630005B0A0 /* tishraadi_e_m_90.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = tishraadi_e_m_90.mp3; sourceTree = "<group>"; };
+		E8F24BA421759B630005B0A0 /* tishraadi_g_m_90.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = tishraadi_g_m_90.mp3; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -1479,6 +1579,8 @@
 				E807A99A20EFE66500500DD6 /* playbutton_sm.png */,
 				E807A99820EFE43700500DD6 /* playbutton.png */,
 				E807A9A020EFEA9600500DD6 /* ic_launcher.png */,
+				E801E2ED214E83FE0058A045 /* mute.png */,
+				E801E2EB214E838F0058A045 /* mute.jpg */,
 			);
 			path = Images;
 			sourceTree = "<group>";
@@ -1494,6 +1596,54 @@
 		E836E69320F12A84003A3648 /* Mridanga */ = {
 			isa = PBXGroup;
 			children = (
+				E8F24B8121759B220005B0A0 /* tishraadi_a_m_80.mp3 */,
+				E8F24BA121759B610005B0A0 /* tishraadi_a_m_90.mp3 */,
+				E8F24B7821759AFF0005B0A0 /* tishraadi_a_v_80.mp3 */,
+				E8F24BA221759B620005B0A0 /* tishraadi_a_v_90.mp3 */,
+				E8F24B9F21759B5D0005B0A0 /* tishraadi_as_m_80.mp3 */,
+				E8F24B7F21759B170005B0A0 /* tishraadi_as_m_90.mp3 */,
+				E8F24B9721759B580005B0A0 /* tishraadi_as_v_80.mp3 */,
+				E8F24B9221759B530005B0A0 /* tishraadi_as_v_90.mp3 */,
+				E8F24B7A21759B0A0005B0A0 /* tishraadi_b_m_80.mp3 */,
+				E8F24B9D21759B5D0005B0A0 /* tishraadi_b_m_90.mp3 */,
+				E8F24B8221759B2A0005B0A0 /* tishraadi_b_v_80.mp3 */,
+				E8F24B9421759B570005B0A0 /* tishraadi_b_v_90.mp3 */,
+				E8F24B9821759B5A0005B0A0 /* tishraadi_c_m_80.mp3 */,
+				E8F24B7621759AF70005B0A0 /* tishraadi_c_m_90.mp3 */,
+				E8F24B8321759B2C0005B0A0 /* tishraadi_c_v_80.mp3 */,
+				E8F24B7921759B040005B0A0 /* tishraadi_c_v_90.mp3 */,
+				E8F24B7B21759B0F0005B0A0 /* tishraadi_cs_m_80.mp3 */,
+				E8F24B8921759B410005B0A0 /* tishraadi_cs_m_90.mp3 */,
+				E8F24B9521759B570005B0A0 /* tishraadi_cs_v_80.mp3 */,
+				E8F24B8A21759B460005B0A0 /* tishraadi_cs_v_90.mp3 */,
+				E8F24B7E21759B150005B0A0 /* tishraadi_d_m_80.mp3 */,
+				E8F24B7C21759B110005B0A0 /* tishraadi_d_m_90.mp3 */,
+				E8F24B9B21759B5C0005B0A0 /* tishraadi_d_v_80.mp3 */,
+				E8F24B8021759B1D0005B0A0 /* tishraadi_d_v_90.mp3 */,
+				E8F24B8421759B300005B0A0 /* tishraadi_ds_m_80.mp3 */,
+				E8F24B8F21759B4B0005B0A0 /* tishraadi_ds_m_90.mp3 */,
+				E8F24B8B21759B470005B0A0 /* tishraadi_ds_v_80.mp3 */,
+				E8F24B9C21759B5C0005B0A0 /* tishraadi_ds_v_90.mp3 */,
+				E8F24B9321759B560005B0A0 /* tishraadi_e_m_80.mp3 */,
+				E8F24BA321759B630005B0A0 /* tishraadi_e_m_90.mp3 */,
+				E8F24BA021759B610005B0A0 /* tishraadi_e_v_80.mp3 */,
+				E8F24B8E21759B4A0005B0A0 /* tishraadi_e_v_90.mp3 */,
+				E8F24B8D21759B480005B0A0 /* tishraadi_f_m_80.mp3 */,
+				E8F24B7D21759B130005B0A0 /* tishraadi_f_m_90.mp3 */,
+				E8F24B7721759AFC0005B0A0 /* tishraadi_f_v_80.mp3 */,
+				E8F24B8521759B320005B0A0 /* tishraadi_f_v_90.mp3 */,
+				E8F24B9621759B580005B0A0 /* tishraadi_fs_m_80.mp3 */,
+				E8F24B8621759B340005B0A0 /* tishraadi_fs_m_90.mp3 */,
+				E8F24B9921759B5A0005B0A0 /* tishraadi_fs_v_80.mp3 */,
+				E8F24B8C21759B480005B0A0 /* tishraadi_fs_v_90.mp3 */,
+				E8F24B9A21759B5C0005B0A0 /* tishraadi_g_m_80.mp3 */,
+				E8F24BA421759B630005B0A0 /* tishraadi_g_m_90.mp3 */,
+				E8F24B7521759AF40005B0A0 /* tishraadi_g_v_80.mp3 */,
+				E8F24B8721759B370005B0A0 /* tishraadi_g_v_90.mp3 */,
+				E8F24B9021759B510005B0A0 /* tishraadi_gs_m_80.mp3 */,
+				E8F24B9121759B530005B0A0 /* tishraadi_gs_m_90.mp3 */,
+				E8F24B8821759B3C0005B0A0 /* tishraadi_gs_v_80.mp3 */,
+				E8F24B9E21759B5D0005B0A0 /* tishraadi_gs_v_90.mp3 */,
 				E836E6DD20F12B26003A3648 /* aditala_a_m_70.mp3 */,
 				E836E82F20F12B43003A3648 /* aditala_a_m_80.mp3 */,
 				E836E83620F12B43003A3648 /* aditala_a_m_90.mp3 */,
@@ -2286,6 +2436,7 @@
 				E8E0C5601FF525B700537320 /* LaunchScreen.storyboard in Resources */,
 				E836E68220EFFDB1003A3648 /* as_pa.mp3 in Resources */,
 				E836EAA420F12B51003A3648 /* aditala_fs_v_70.mp3 in Resources */,
+				E8F24BD421759B660005B0A0 /* tishraadi_g_m_90.mp3 in Resources */,
 				E836E93220F12B51003A3648 /* aditala_gs_m_110.mp3 in Resources */,
 				E836E9D420F12B51003A3648 /* rupakatala_d_m_70.mp3 in Resources */,
 				E836E91B20F12B50003A3648 /* khandachapu_f_m_90.mp3 in Resources */,
@@ -2314,6 +2465,7 @@
 				E836EB1320F12B51003A3648 /* aditala_as_v_90.mp3 in Resources */,
 				E836E98020F12B51003A3648 /* khandachapu_as_v_90.mp3 in Resources */,
 				E836EA0220F12B51003A3648 /* mishrachapu_a_v_90.mp3 in Resources */,
+				E8F24BB321759B660005B0A0 /* tishraadi_c_v_80.mp3 in Resources */,
 				E836EACC20F12B51003A3648 /* khandachapu_fs_v_90.mp3 in Resources */,
 				E836EB0920F12B51003A3648 /* khandachapu_e_m_90.mp3 in Resources */,
 				E836E99D20F12B51003A3648 /* aditala_e_m_110.mp3 in Resources */,
@@ -2327,6 +2479,7 @@
 				E836E97720F12B51003A3648 /* d_ma.mp3 in Resources */,
 				E836EAF820F12B51003A3648 /* khandachapu_c_v_120.mp3 in Resources */,
 				E836EA8A20F12B51003A3648 /* aditala_a_v_120.mp3 in Resources */,
+				E8F24BBE21759B660005B0A0 /* tishraadi_e_v_90.mp3 in Resources */,
 				E836E91620F12B50003A3648 /* rupakatala_gs_v_110.mp3 in Resources */,
 				E836EAAD20F12B51003A3648 /* khandachapu_g_v_100.mp3 in Resources */,
 				E836EA9E20F12B51003A3648 /* rupakatala_c_v_80.mp3 in Resources */,
@@ -2340,6 +2493,7 @@
 				E836EAB020F12B51003A3648 /* mishrachapu_e_v_70.mp3 in Resources */,
 				E836E9BD20F12B51003A3648 /* khandachapu_cs_v_90.mp3 in Resources */,
 				E836EA1E20F12B51003A3648 /* g_sa.mp3 in Resources */,
+				E8F24BC621759B660005B0A0 /* tishraadi_fs_m_80.mp3 in Resources */,
 				E836EA7120F12B51003A3648 /* rupakatala_g_v_120.mp3 in Resources */,
 				E836EADD20F12B51003A3648 /* aditala_d_m_100.mp3 in Resources */,
 				E836E9E420F12B51003A3648 /* rupakatala_cs_v_90.mp3 in Resources */,
@@ -2354,6 +2508,7 @@
 				E836E95820F12B51003A3648 /* mishrachapu_g_m_120.mp3 in Resources */,
 				E836EA1320F12B51003A3648 /* aditala_cs_v_110.mp3 in Resources */,
 				E836EAAC20F12B51003A3648 /* khandachapu_b_m_80.mp3 in Resources */,
+				E8F24BD221759B660005B0A0 /* tishraadi_a_v_90.mp3 in Resources */,
 				E836E94720F12B51003A3648 /* khandachapu_cs_m_110.mp3 in Resources */,
 				E836EB2220F12B51003A3648 /* d_pa.mp3 in Resources */,
 				E836EB5320F12B51003A3648 /* khandachapu_g_m_110.mp3 in Resources */,
@@ -2362,6 +2517,7 @@
 				E836E9AC20F12B51003A3648 /* rupakatala_f_v_80.mp3 in Resources */,
 				E836EB3720F12B51003A3648 /* aditala_ds_m_70.mp3 in Resources */,
 				E836EA9B20F12B51003A3648 /* mishrachapu_a_m_90.mp3 in Resources */,
+				E8F24BB421759B660005B0A0 /* tishraadi_ds_m_80.mp3 in Resources */,
 				E836EAFC20F12B51003A3648 /* khandachapu_cs_m_70.mp3 in Resources */,
 				E836E66620EFFDB1003A3648 /* f_ni.mp3 in Resources */,
 				E836EAD720F12B51003A3648 /* mishrachapu_d_m_80.mp3 in Resources */,
@@ -2377,12 +2533,14 @@
 				E836E68620EFFDB1003A3648 /* ds_ni.mp3 in Resources */,
 				E836EAEB20F12B51003A3648 /* rupakatala_e_v_70.mp3 in Resources */,
 				E836E9FC20F12B51003A3648 /* rupakatala_ds_m_90.mp3 in Resources */,
+				E8F24BCE21759B660005B0A0 /* tishraadi_gs_v_90.mp3 in Resources */,
 				E836EA0420F12B51003A3648 /* mishrachapu_cs_m_120.mp3 in Resources */,
 				E836EA8020F12B51003A3648 /* rupakatala_f_v_90.mp3 in Resources */,
 				E836E90A20F12B50003A3648 /* mishrachapu_gs_m_120.mp3 in Resources */,
 				E836E95A20F12B51003A3648 /* mishrachapu_ds_v_100.mp3 in Resources */,
 				E836EB2920F12B51003A3648 /* rupakatala_as_v_100.mp3 in Resources */,
 				E836E93720F12B51003A3648 /* rupakatala_c_m_90.mp3 in Resources */,
+				E8F24BB821759B660005B0A0 /* tishraadi_gs_v_80.mp3 in Resources */,
 				E836E66320EFFDB1003A3648 /* as_ma.mp3 in Resources */,
 				E836EACB20F12B51003A3648 /* khandachapu_d_v_110.mp3 in Resources */,
 				E836E9CC20F12B51003A3648 /* mishrachapu_b_v_70.mp3 in Resources */,
@@ -2405,10 +2563,12 @@
 				E836EA6F20F12B51003A3648 /* rupakatala_as_v_120.mp3 in Resources */,
 				E836E9CB20F12B51003A3648 /* khandachapu_c_v_90.mp3 in Resources */,
 				E836E9D520F12B51003A3648 /* aditala_fs_m_70.mp3 in Resources */,
+				E8F24BBF21759B660005B0A0 /* tishraadi_ds_m_90.mp3 in Resources */,
 				E807A99920EFE43700500DD6 /* playbutton.png in Resources */,
 				E836E66420EFFDB1003A3648 /* e_sa.mp3 in Resources */,
 				E836E95F20F12B51003A3648 /* aditala_ds_v_100.mp3 in Resources */,
 				E836EAD920F12B51003A3648 /* rupakatala_fs_v_80.mp3 in Resources */,
+				E8F24BA721759B660005B0A0 /* tishraadi_f_v_80.mp3 in Resources */,
 				E836E97C20F12B51003A3648 /* aditala_gs_v_80.mp3 in Resources */,
 				E836EA0E20F12B51003A3648 /* rupakatala_fs_m_120.mp3 in Resources */,
 				E836EB4920F12B51003A3648 /* aditala_as_v_70.mp3 in Resources */,
@@ -2421,9 +2581,11 @@
 				E836EA2420F12B51003A3648 /* c_sa.mp3 in Resources */,
 				E836E9E220F12B51003A3648 /* mishrachapu_b_m_120.mp3 in Resources */,
 				E836EA2A20F12B51003A3648 /* rupakatala_a_v_80.mp3 in Resources */,
+				E8F24BBA21759B660005B0A0 /* tishraadi_cs_v_90.mp3 in Resources */,
 				E836EB0020F12B51003A3648 /* mishrachapu_c_m_90.mp3 in Resources */,
 				E836E91420F12B50003A3648 /* aditala_ds_v_80.mp3 in Resources */,
 				E836E92320F12B51003A3648 /* b_ma.mp3 in Resources */,
+				E8F24BB221759B660005B0A0 /* tishraadi_b_v_80.mp3 in Resources */,
 				E836EB3920F12B51003A3648 /* khandachapu_cs_v_120.mp3 in Resources */,
 				E8E0C55D1FF525B700537320 /* Assets.xcassets in Resources */,
 				E836EA7920F12B51003A3648 /* rupakatala_e_m_120.mp3 in Resources */,
@@ -2432,12 +2594,14 @@
 				E836EB5220F12B51003A3648 /* mishrachapu_d_m_70.mp3 in Resources */,
 				E836E96520F12B51003A3648 /* aditala_fs_v_80.mp3 in Resources */,
 				E836EB2820F12B51003A3648 /* khandachapu_d_m_90.mp3 in Resources */,
+				E8F24BB021759B660005B0A0 /* tishraadi_d_v_90.mp3 in Resources */,
 				E836E97A20F12B51003A3648 /* mishrachapu_cs_v_70.mp3 in Resources */,
 				E836EA8E20F12B51003A3648 /* aditala_d_m_80.mp3 in Resources */,
 				E836EB1620F12B51003A3648 /* aditala_b_v_90.mp3 in Resources */,
 				E836EA9520F12B51003A3648 /* khandachapu_a_m_80.mp3 in Resources */,
 				E836EA9F20F12B51003A3648 /* aditala_a_m_80.mp3 in Resources */,
 				E836EAA520F12B51003A3648 /* mishrachapu_as_m_100.mp3 in Resources */,
+				E8F24BC321759B660005B0A0 /* tishraadi_e_m_80.mp3 in Resources */,
 				E836E97920F12B51003A3648 /* mishrachapu_as_v_110.mp3 in Resources */,
 				E836E9D820F12B51003A3648 /* mishrachapu_fs_v_100.mp3 in Resources */,
 				E836E96320F12B51003A3648 /* khandachapu_gs_v_90.mp3 in Resources */,
@@ -2459,6 +2623,7 @@
 				E836EA5C20F12B51003A3648 /* rupakatala_a_v_100.mp3 in Resources */,
 				E836E9FB20F12B51003A3648 /* khandachapu_fs_v_110.mp3 in Resources */,
 				E836E98520F12B51003A3648 /* mishrachapu_c_v_110.mp3 in Resources */,
+				E8F24BB121759B660005B0A0 /* tishraadi_a_m_80.mp3 in Resources */,
 				E836EA4B20F12B51003A3648 /* mishrachapu_as_v_120.mp3 in Resources */,
 				E836E9D920F12B51003A3648 /* khandachapu_b_m_100.mp3 in Resources */,
 				E836EA2720F12B51003A3648 /* khandachapu_g_m_70.mp3 in Resources */,
@@ -2470,6 +2635,7 @@
 				E836E67120EFFDB1003A3648 /* g_sa.mp3 in Resources */,
 				E836EA6E20F12B51003A3648 /* khandachapu_e_v_70.mp3 in Resources */,
 				E836E66F20EFFDB1003A3648 /* d_sa.mp3 in Resources */,
+				E8F24BC121759B660005B0A0 /* tishraadi_gs_m_90.mp3 in Resources */,
 				E836EB5C20F12B51003A3648 /* khandachapu_d_v_70.mp3 in Resources */,
 				E836EA5420F12B51003A3648 /* mishrachapu_e_m_80.mp3 in Resources */,
 				E836E69220EFFDB1003A3648 /* b_pa.mp3 in Resources */,
@@ -2506,6 +2672,7 @@
 				E836E93520F12B51003A3648 /* mishrachapu_fs_v_90.mp3 in Resources */,
 				E836E97520F12B51003A3648 /* aditala_a_v_70.mp3 in Resources */,
 				E836E9E920F12B51003A3648 /* rupakatala_g_m_110.mp3 in Resources */,
+				E8F24BC921759B660005B0A0 /* tishraadi_fs_v_80.mp3 in Resources */,
 				E836E68F20EFFDB1003A3648 /* d_ni.mp3 in Resources */,
 				E836EB5520F12B51003A3648 /* aditala_f_v_80.mp3 in Resources */,
 				E836E99F20F12B51003A3648 /* mishrachapu_fs_m_110.mp3 in Resources */,
@@ -2533,10 +2700,13 @@
 				E836EACD20F12B51003A3648 /* khandachapu_c_v_80.mp3 in Resources */,
 				E8E0C55B1FF525B700537320 /* Main.storyboard in Resources */,
 				E836EB5A20F12B51003A3648 /* aditala_e_m_80.mp3 in Resources */,
+				E8F24BB921759B660005B0A0 /* tishraadi_cs_m_90.mp3 in Resources */,
 				E836EAC520F12B51003A3648 /* aditala_g_m_100.mp3 in Resources */,
+				E8F24BBC21759B660005B0A0 /* tishraadi_fs_v_90.mp3 in Resources */,
 				E836E98B20F12B51003A3648 /* khandachapu_a_m_120.mp3 in Resources */,
 				E836EA6820F12B51003A3648 /* as_sa.mp3 in Resources */,
 				E836E98420F12B51003A3648 /* aditala_b_v_80.mp3 in Resources */,
+				E8F24BAA21759B660005B0A0 /* tishraadi_b_m_80.mp3 in Resources */,
 				E836EA7C20F12B51003A3648 /* aditala_cs_m_120.mp3 in Resources */,
 				E807A9A120EFEA9600500DD6 /* ic_launcher.png in Resources */,
 				E836E99820F12B51003A3648 /* khandachapu_as_v_120.mp3 in Resources */,
@@ -2592,6 +2762,7 @@
 				E836EA5020F12B51003A3648 /* rupakatala_as_v_80.mp3 in Resources */,
 				E836E92820F12B51003A3648 /* khandachapu_e_v_110.mp3 in Resources */,
 				E836EA9A20F12B51003A3648 /* aditala_as_m_70.mp3 in Resources */,
+				E8F24BA921759B660005B0A0 /* tishraadi_c_v_90.mp3 in Resources */,
 				E836E66520EFFDB1003A3648 /* f_pa.mp3 in Resources */,
 				E836EAFB20F12B51003A3648 /* khandachapu_ds_m_70.mp3 in Resources */,
 				E836E66820EFFDB1003A3648 /* a_ni.mp3 in Resources */,
@@ -2660,6 +2831,7 @@
 				E836E9AB20F12B51003A3648 /* mishrachapu_g_m_80.mp3 in Resources */,
 				E836E9A620F12B51003A3648 /* khandachapu_e_m_80.mp3 in Resources */,
 				E836EA8120F12B51003A3648 /* mishrachapu_ds_m_80.mp3 in Resources */,
+				E8F24BAE21759B660005B0A0 /* tishraadi_d_m_80.mp3 in Resources */,
 				E836EB5920F12B51003A3648 /* aditala_g_v_120.mp3 in Resources */,
 				E836E90B20F12B50003A3648 /* aditala_as_m_90.mp3 in Resources */,
 				E836E9B120F12B51003A3648 /* khandachapu_a_v_110.mp3 in Resources */,
@@ -2667,6 +2839,7 @@
 				E836EA3A20F12B51003A3648 /* mishrachapu_e_m_120.mp3 in Resources */,
 				E836E9BF20F12B51003A3648 /* rupakatala_gs_v_90.mp3 in Resources */,
 				E836E9C120F12B51003A3648 /* mishrachapu_f_m_90.mp3 in Resources */,
+				E8F24BAC21759B660005B0A0 /* tishraadi_d_m_90.mp3 in Resources */,
 				E836E9BC20F12B51003A3648 /* mishrachapu_c_v_90.mp3 in Resources */,
 				E836EA9020F12B51003A3648 /* khandachapu_c_m_80.mp3 in Resources */,
 				E836EB1820F12B51003A3648 /* khandachapu_g_v_90.mp3 in Resources */,
@@ -2676,7 +2849,9 @@
 				E836EAED20F12B51003A3648 /* aditala_d_m_110.mp3 in Resources */,
 				E836EA5A20F12B51003A3648 /* khandachapu_as_m_90.mp3 in Resources */,
 				E836EA7A20F12B51003A3648 /* aditala_gs_v_110.mp3 in Resources */,
+				E8F24BA521759B660005B0A0 /* tishraadi_g_v_80.mp3 in Resources */,
 				E836E9E020F12B51003A3648 /* f_sa.mp3 in Resources */,
+				E8F24BC521759B660005B0A0 /* tishraadi_cs_v_80.mp3 in Resources */,
 				E836E92520F12B51003A3648 /* e_sa.mp3 in Resources */,
 				E836E96220F12B51003A3648 /* aditala_c_m_110.mp3 in Resources */,
 				E836EB3820F12B51003A3648 /* aditala_ds_v_90.mp3 in Resources */,
@@ -2687,6 +2862,7 @@
 				E836E9DA20F12B51003A3648 /* mishrachapu_f_m_120.mp3 in Resources */,
 				E836E9F020F12B51003A3648 /* rupakatala_c_v_120.mp3 in Resources */,
 				E836E95120F12B51003A3648 /* khandachapu_gs_m_70.mp3 in Resources */,
+				E8F24BCB21759B660005B0A0 /* tishraadi_d_v_80.mp3 in Resources */,
 				E836E90720F12B50003A3648 /* rupakatala_ds_m_80.mp3 in Resources */,
 				E836E96120F12B51003A3648 /* aditala_as_v_80.mp3 in Resources */,
 				E836E9FA20F12B51003A3648 /* mishrachapu_fs_m_80.mp3 in Resources */,
@@ -2706,6 +2882,7 @@
 				E836EA8920F12B51003A3648 /* aditala_cs_v_70.mp3 in Resources */,
 				E836EAF220F12B51003A3648 /* mishrachapu_b_m_100.mp3 in Resources */,
 				E836EAE220F12B51003A3648 /* khandachapu_c_m_100.mp3 in Resources */,
+				E8F24BA621759B660005B0A0 /* tishraadi_c_m_90.mp3 in Resources */,
 				E836E97E20F12B51003A3648 /* mishrachapu_gs_v_70.mp3 in Resources */,
 				E836EA1F20F12B51003A3648 /* mishrachapu_g_v_80.mp3 in Resources */,
 				E836E9C720F12B51003A3648 /* rupakatala_fs_m_70.mp3 in Resources */,
@@ -2717,11 +2894,14 @@
 				E836EB4420F12B51003A3648 /* khandachapu_fs_m_110.mp3 in Resources */,
 				E836EB3420F12B51003A3648 /* aditala_fs_m_90.mp3 in Resources */,
 				E836E9F920F12B51003A3648 /* khandachapu_ds_v_110.mp3 in Resources */,
+				E8F24BC821759B660005B0A0 /* tishraadi_c_m_80.mp3 in Resources */,
 				E836E97020F12B51003A3648 /* aditala_c_v_80.mp3 in Resources */,
 				E836EA2120F12B51003A3648 /* mishrachapu_d_v_100.mp3 in Resources */,
+				E8F24BCC21759B660005B0A0 /* tishraadi_ds_v_90.mp3 in Resources */,
 				E836EA3220F12B51003A3648 /* aditala_e_v_120.mp3 in Resources */,
 				E836E9D220F12B51003A3648 /* mishrachapu_e_v_110.mp3 in Resources */,
 				E836EA6D20F12B51003A3648 /* aditala_as_v_120.mp3 in Resources */,
+				E8F24BAB21759B660005B0A0 /* tishraadi_cs_m_80.mp3 in Resources */,
 				E836EA1120F12B51003A3648 /* mishrachapu_b_v_90.mp3 in Resources */,
 				E836E92B20F12B51003A3648 /* khandachapu_ds_m_100.mp3 in Resources */,
 				E836E9B720F12B51003A3648 /* khandachapu_d_m_80.mp3 in Resources */,
@@ -2735,8 +2915,10 @@
 				E836EA3120F12B51003A3648 /* mishrachapu_c_v_100.mp3 in Resources */,
 				E836EA4220F12B51003A3648 /* mishrachapu_g_v_70.mp3 in Resources */,
 				E836E66E20EFFDB1003A3648 /* as_sa.mp3 in Resources */,
+				E8F24BC721759B660005B0A0 /* tishraadi_as_v_80.mp3 in Resources */,
 				E836EAC420F12B51003A3648 /* khandachapu_d_m_100.mp3 in Resources */,
 				E836E9C620F12B51003A3648 /* mishrachapu_cs_m_70.mp3 in Resources */,
+				E8F24BD121759B660005B0A0 /* tishraadi_a_m_90.mp3 in Resources */,
 				E836EB1720F12B51003A3648 /* khandachapu_c_m_110.mp3 in Resources */,
 				E836EAFD20F12B51003A3648 /* f_ni.mp3 in Resources */,
 				E836E9F820F12B51003A3648 /* khandachapu_a_v_100.mp3 in Resources */,
@@ -2756,12 +2938,14 @@
 				E836E91520F12B50003A3648 /* mishrachapu_c_m_100.mp3 in Resources */,
 				E836E96820F12B51003A3648 /* c_ma.mp3 in Resources */,
 				E836EB6420F12B51003A3648 /* khandachapu_e_v_80.mp3 in Resources */,
+				E8F24BD021759B660005B0A0 /* tishraadi_e_v_80.mp3 in Resources */,
 				E836E68720EFFDB1003A3648 /* e_ni.mp3 in Resources */,
 				E836E97320F12B51003A3648 /* aditala_f_m_90.mp3 in Resources */,
 				E836EA9820F12B51003A3648 /* mishrachapu_d_m_90.mp3 in Resources */,
 				E836EB3C20F12B51003A3648 /* mishrachapu_cs_m_80.mp3 in Resources */,
 				E836EB6D20F12B51003A3648 /* aditala_c_m_70.mp3 in Resources */,
 				E836E9C220F12B51003A3648 /* aditala_g_v_110.mp3 in Resources */,
+				E8F24BB721759B660005B0A0 /* tishraadi_g_v_90.mp3 in Resources */,
 				E836E9A820F12B51003A3648 /* khandachapu_d_v_120.mp3 in Resources */,
 				E836EAC220F12B51003A3648 /* mishrachapu_a_v_80.mp3 in Resources */,
 				E836E90D20F12B50003A3648 /* mishrachapu_d_v_80.mp3 in Resources */,
@@ -2780,6 +2964,7 @@
 				E836EACA20F12B51003A3648 /* khandachapu_gs_m_110.mp3 in Resources */,
 				E836EB5B20F12B51003A3648 /* rupakatala_a_v_110.mp3 in Resources */,
 				E836E9EE20F12B51003A3648 /* gs_ma.mp3 in Resources */,
+				E8F24BBD21759B660005B0A0 /* tishraadi_f_m_80.mp3 in Resources */,
 				E836E9CD20F12B51003A3648 /* rupakatala_ds_v_120.mp3 in Resources */,
 				E836EA2E20F12B51003A3648 /* rupakatala_gs_v_120.mp3 in Resources */,
 				E836EA0820F12B51003A3648 /* khandachapu_g_v_70.mp3 in Resources */,
@@ -2790,6 +2975,7 @@
 				E836EA8820F12B51003A3648 /* aditala_as_m_100.mp3 in Resources */,
 				E836EB3120F12B51003A3648 /* aditala_f_m_80.mp3 in Resources */,
 				E836E90C20F12B50003A3648 /* aditala_f_v_100.mp3 in Resources */,
+				E8F24BC421759B660005B0A0 /* tishraadi_b_v_90.mp3 in Resources */,
 				E836E97420F12B51003A3648 /* khandachapu_f_v_80.mp3 in Resources */,
 				E836EB4820F12B51003A3648 /* rupakatala_e_v_90.mp3 in Resources */,
 				E836EB0520F12B51003A3648 /* rupakatala_f_v_70.mp3 in Resources */,
@@ -2805,6 +2991,7 @@
 				E836E91F20F12B50003A3648 /* mishrachapu_g_v_120.mp3 in Resources */,
 				E836E9F320F12B51003A3648 /* aditala_fs_m_110.mp3 in Resources */,
 				E836E93C20F12B51003A3648 /* aditala_ds_m_120.mp3 in Resources */,
+				E801E2EE214E83FE0058A045 /* mute.png in Resources */,
 				E836EB1A20F12B51003A3648 /* aditala_c_v_110.mp3 in Resources */,
 				E836EB0120F12B51003A3648 /* mishrachapu_d_m_120.mp3 in Resources */,
 				E836E91120F12B50003A3648 /* mishrachapu_a_m_110.mp3 in Resources */,
@@ -2828,20 +3015,24 @@
 				E836EA5F20F12B51003A3648 /* b_sa.mp3 in Resources */,
 				E836E91D20F12B50003A3648 /* aditala_gs_v_90.mp3 in Resources */,
 				E836EABF20F12B51003A3648 /* aditala_g_v_70.mp3 in Resources */,
+				E8F24BC021759B660005B0A0 /* tishraadi_gs_m_80.mp3 in Resources */,
 				E836E9DB20F12B51003A3648 /* khandachapu_gs_v_120.mp3 in Resources */,
 				E836E92F20F12B51003A3648 /* rupakatala_e_m_80.mp3 in Resources */,
 				E836E97120F12B51003A3648 /* mishrachapu_c_v_120.mp3 in Resources */,
 				E836EB4320F12B51003A3648 /* f_pa.mp3 in Resources */,
 				E836EB1520F12B51003A3648 /* rupakatala_e_v_100.mp3 in Resources */,
+				E8F24BAF21759B660005B0A0 /* tishraadi_as_m_90.mp3 in Resources */,
 				E836EADF20F12B51003A3648 /* khandachapu_a_m_110.mp3 in Resources */,
 				E836E97820F12B51003A3648 /* mishrachapu_as_m_70.mp3 in Resources */,
 				E836E93120F12B51003A3648 /* rupakatala_g_v_90.mp3 in Resources */,
 				E836EA4820F12B51003A3648 /* khandachapu_e_m_110.mp3 in Resources */,
 				E836E97F20F12B51003A3648 /* khandachapu_a_v_80.mp3 in Resources */,
 				E836E93A20F12B51003A3648 /* rupakatala_d_v_80.mp3 in Resources */,
+				E8F24BA821759B660005B0A0 /* tishraadi_a_v_80.mp3 in Resources */,
 				E807A99D20EFE66D00500DD6 /* pause_sm.png in Resources */,
 				E836EB1C20F12B51003A3648 /* mishrachapu_ds_m_100.mp3 in Resources */,
 				E836EB6720F12B51003A3648 /* c_pa.mp3 in Resources */,
+				E8F24BAD21759B660005B0A0 /* tishraadi_f_m_90.mp3 in Resources */,
 				E836E9F220F12B51003A3648 /* aditala_b_m_90.mp3 in Resources */,
 				E836E9AF20F12B51003A3648 /* aditala_ds_v_110.mp3 in Resources */,
 				E836EA2920F12B51003A3648 /* khandachapu_f_v_110.mp3 in Resources */,
@@ -2867,6 +3058,7 @@
 				E836EB4E20F12B51003A3648 /* rupakatala_a_v_70.mp3 in Resources */,
 				E836EA6720F12B51003A3648 /* aditala_c_v_70.mp3 in Resources */,
 				E836EB4C20F12B51003A3648 /* khandachapu_c_v_100.mp3 in Resources */,
+				E8F24BB521759B660005B0A0 /* tishraadi_f_v_90.mp3 in Resources */,
 				E836EA5620F12B51003A3648 /* mishrachapu_ds_m_90.mp3 in Resources */,
 				E836EB5020F12B51003A3648 /* aditala_f_v_120.mp3 in Resources */,
 				E836EA1420F12B51003A3648 /* aditala_g_v_90.mp3 in Resources */,
@@ -2890,6 +3082,7 @@
 				E836E91820F12B50003A3648 /* mishrachapu_fs_v_70.mp3 in Resources */,
 				E836E69120EFFDB1003A3648 /* cs_ni.mp3 in Resources */,
 				E836E96C20F12B51003A3648 /* rupakatala_b_m_110.mp3 in Resources */,
+				E8F24BCD21759B660005B0A0 /* tishraadi_b_m_90.mp3 in Resources */,
 				E836E67520EFFDB1003A3648 /* b_ni.mp3 in Resources */,
 				E836EB2F20F12B51003A3648 /* rupakatala_e_v_120.mp3 in Resources */,
 				E836EA2020F12B51003A3648 /* aditala_g_m_80.mp3 in Resources */,
@@ -2903,11 +3096,13 @@
 				E836E9E720F12B51003A3648 /* aditala_d_v_90.mp3 in Resources */,
 				E836E96620F12B51003A3648 /* khandachapu_fs_m_100.mp3 in Resources */,
 				E836EA1720F12B51003A3648 /* mishrachapu_cs_v_120.mp3 in Resources */,
+				E8F24BBB21759B660005B0A0 /* tishraadi_ds_v_80.mp3 in Resources */,
 				E836E95420F12B51003A3648 /* rupakatala_f_m_90.mp3 in Resources */,
 				E836EAC820F12B51003A3648 /* khandachapu_f_m_80.mp3 in Resources */,
 				E836EB1920F12B51003A3648 /* rupakatala_as_v_110.mp3 in Resources */,
 				E836E98320F12B51003A3648 /* aditala_b_m_110.mp3 in Resources */,
 				E836EA1B20F12B51003A3648 /* rupakatala_a_v_120.mp3 in Resources */,
+				E8F24BC221759B660005B0A0 /* tishraadi_as_v_90.mp3 in Resources */,
 				E836EA8220F12B51003A3648 /* mishrachapu_c_m_110.mp3 in Resources */,
 				E836EA7520F12B51003A3648 /* rupakatala_f_m_80.mp3 in Resources */,
 				E836EAD420F12B51003A3648 /* rupakatala_b_v_90.mp3 in Resources */,
@@ -2918,6 +3113,7 @@
 				E836E92C20F12B51003A3648 /* rupakatala_c_m_120.mp3 in Resources */,
 				E836E9F720F12B51003A3648 /* mishrachapu_gs_v_120.mp3 in Resources */,
 				E836EA5820F12B51003A3648 /* mishrachapu_fs_m_70.mp3 in Resources */,
+				E8F24BD321759B660005B0A0 /* tishraadi_e_m_90.mp3 in Resources */,
 				E836E90820F12B50003A3648 /* mishrachapu_fs_m_90.mp3 in Resources */,
 				E836E99120F12B51003A3648 /* gs_sa.mp3 in Resources */,
 				E836E67E20EFFDB1003A3648 /* f_ma.mp3 in Resources */,
@@ -2931,15 +3127,19 @@
 				E836E96A20F12B51003A3648 /* aditala_g_v_80.mp3 in Resources */,
 				E836EA4E20F12B51003A3648 /* aditala_f_v_70.mp3 in Resources */,
 				E836EA3B20F12B51003A3648 /* rupakatala_e_m_110.mp3 in Resources */,
+				E801E2EC214E83900058A045 /* mute.jpg in Resources */,
 				E836EABD20F12B51003A3648 /* aditala_cs_m_90.mp3 in Resources */,
+				E8F24BB621759B660005B0A0 /* tishraadi_fs_m_90.mp3 in Resources */,
 				E836E98E20F12B51003A3648 /* mishrachapu_ds_m_70.mp3 in Resources */,
 				E836E9A420F12B51003A3648 /* mishrachapu_gs_v_110.mp3 in Resources */,
 				E836EB2C20F12B51003A3648 /* khandachapu_a_v_70.mp3 in Resources */,
 				E836EA4C20F12B51003A3648 /* mishrachapu_gs_v_80.mp3 in Resources */,
+				E8F24BCF21759B660005B0A0 /* tishraadi_as_m_80.mp3 in Resources */,
 				E836EAEC20F12B51003A3648 /* aditala_e_m_120.mp3 in Resources */,
 				E836EAC920F12B51003A3648 /* khandachapu_gs_m_100.mp3 in Resources */,
 				E836EAE920F12B51003A3648 /* mishrachapu_ds_v_110.mp3 in Resources */,
 				E836EB1D20F12B51003A3648 /* rupakatala_ds_v_110.mp3 in Resources */,
+				E8F24BCA21759B660005B0A0 /* tishraadi_g_m_80.mp3 in Resources */,
 				E836EA3020F12B51003A3648 /* khandachapu_f_m_120.mp3 in Resources */,
 				E836EB3F20F12B51003A3648 /* mishrachapu_e_v_80.mp3 in Resources */,
 				E836EB2720F12B51003A3648 /* khandachapu_f_v_90.mp3 in Resources */,

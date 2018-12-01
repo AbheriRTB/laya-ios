@@ -61,6 +61,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     
     
     var talaList = ["Aditala","Rupakatala", "Mishrachapu", "Khandachapu",
+                    "Tishra Adi",
                     "Aditala Mohra Korvai", "Rupakatala Mohra Korvai",
                     "Mishrachapu Mohra Korvai", "Khandachapu Mohra Korvai"]
     var kalaMap = ["Madhyama":"m", "Vilamba":"v"]
@@ -403,6 +404,9 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
             break
         case "Khandachapu":
             fileName = "khandachapu_\(shruti)_\(kala)_\(bpmSelected).mp3"
+            break
+        case "Tishra Adi":
+            fileName = "tishraadi_\(shruti)_\(kala)_\(bpmSelected).mp3"
             break
         case "Aditala Mohra Korvai":
             fileName = "aditala_mohra_korvai.mp3"
