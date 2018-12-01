@@ -138,13 +138,21 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     @IBAction func PlayAudio(_ sender: Any) {
         
         let shrutiFileName = getShrutiFileName(shruti: shrutiSelected)
-        let shrutiPath = Bundle.main.path(forResource: shrutiFileName, ofType:nil)!
-        let shrutiUrl = URL(fileURLWithPath: shrutiPath)
+        let shrutiPath = Bundle.main.path(forResource: shrutiFileName, ofType:nil)
+        if shrutiPath == nil{
+            return
+        }
+        let shrutiUrl = URL(fileURLWithPath: shrutiPath!)
         
         let mridangaFileName = getTalaFileName(tala: talaSelected)
         //let mridangaFileName = "aditala_a_m_70.mp3"
-        let mridangaPath = Bundle.main.path(forResource: mridangaFileName, ofType:nil)!
-        let mridangaUrl = URL(fileURLWithPath: mridangaPath)
+        
+        let mridangaPath = Bundle.main.path(forResource: mridangaFileName, ofType:nil)
+        if mridangaPath == nil{
+            return
+        }
+        
+        let mridangaUrl = URL(fileURLWithPath: mridangaPath!)
         
         do {
             try AVAudioSession.sharedInstance().setCategory(AVAudioSessionCategoryPlayback, with: .mixWithOthers)
