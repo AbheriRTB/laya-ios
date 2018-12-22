@@ -8,16 +8,19 @@
 
 import UIKit
 import AVFoundation
+import StoreKit
 
 
 @UIApplicationMain
-class AppDelegate: UIResponder, UIApplicationDelegate {
+class AppDelegate: UIResponder, UIApplicationDelegate, SKPaymentTransactionObserver{
 
     var window: UIWindow?
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        
+        SKPaymentQueue.default().add(self)
         return true
     }
 
@@ -42,6 +45,23 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func applicationWillTerminate(_ application: UIApplication) {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
     }
+    
+    
+    func paymentQueue(_ queue: SKPaymentQueue, updatedTransactions transactions: [SKPaymentTransaction]) {
+        for transaction in transactions {
+            switch transaction.transactionState {
+            case .failed:
+                queue.finishTransaction(transaction)
+                print("Transaction Failed \(transaction)")
+            case .purchased, .restored:
+                queue.finishTransaction(transaction)
+                print("Transaction purchased or restored: \(transaction)")
+            case .deferred, .purchasing:
+                print("Transaction in progress: \(transaction)")
+            }
+        }
+    }
+    
 
 
 }
