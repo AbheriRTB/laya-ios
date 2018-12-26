@@ -21,10 +21,7 @@ protocol SubscriptionViewControllerDelegate {
 class SubscriptionViewController: UIViewController, UITableViewDelegate, UITableViewDataSource, SKProductsRequestDelegate, SKPaymentTransactionObserver {
     
     
-    
-    @IBOutlet weak var tblProducts: UITableView!
-    
-    
+    @IBOutlet weak var tblProducts1: UITableView!
     var delegate: SubscriptionViewControllerDelegate!
     
     var productIDs: Array<String?> = []
@@ -41,13 +38,14 @@ class SubscriptionViewController: UIViewController, UITableViewDelegate, UITable
         
         // Do any additional setup after loading the view.
         
-        tblProducts.delegate = self
-        tblProducts.dataSource = self
+        tblProducts1.delegate = self
+        tblProducts1.dataSource = self
         
         
         // Replace the product IDs with your own values if needed.
-        productIDs.append("iapdemo_extra_colors_col1")
-        productIDs.append("iapdemo_extra_colors_col2")
+        //productIDs.append("iapdemo_extra_colors_col1")
+        //productIDs.append("iapdemo_extra_colors_col2")
+        productIDs.append("monthly_subscription")
         
         requestProductInfo()
         
@@ -73,10 +71,10 @@ class SubscriptionViewController: UIViewController, UITableViewDelegate, UITable
     
     // MARK: IBAction method implementation
     
-    @IBAction func dismiss(sender: AnyObject) {
+    
+    @IBAction func dismiss(_ sender: Any) {
         dismiss(animated: true, completion: nil)
     }
-    
     
     // MARK: UITableView method implementation
     
@@ -91,7 +89,7 @@ class SubscriptionViewController: UIViewController, UITableViewDelegate, UITable
     
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "idCellProduct", for: indexPath) as! UITableViewCell
+        let cell = tableView.dequeueReusableCell(withIdentifier: "idCellProduct", for: indexPath)
         
         let product = productsArray[indexPath.row]
         cell.textLabel?.text = product?.localizedTitle
@@ -101,17 +99,18 @@ class SubscriptionViewController: UIViewController, UITableViewDelegate, UITable
     }
     
     
-    func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 80.0
     }
     
     
-    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         selectedProductIndex = indexPath.row
         showActions()
         tableView.cellForRow(at: indexPath as IndexPath)?.isSelected = false
     }
     
+   
     
     // MARK: Custom method implementation
     
@@ -137,7 +136,7 @@ class SubscriptionViewController: UIViewController, UITableViewDelegate, UITable
         let actionSheetController = UIAlertController(title: "IAPDemo", message: "What do you want to do?", preferredStyle: UIAlertControllerStyle.actionSheet)
         
         let buyAction = UIAlertAction(title: "Buy", style: UIAlertActionStyle.default) { (action) -> Void in
-            let payment = SKPayment(product: self.productsArray[self.selectedProductIndex] as! SKProduct)
+            let payment = SKPayment(product: self.productsArray[self.selectedProductIndex] as! SKProduct!)
             SKPaymentQueue.default().add(payment)
             self.transactionInProgress = true
         }
@@ -161,7 +160,7 @@ class SubscriptionViewController: UIViewController, UITableViewDelegate, UITable
                 productsArray.append(product)
             }
             
-            tblProducts.reloadData()
+            tblProducts1.reloadData()
         }
         else {
             print("There are no products.")

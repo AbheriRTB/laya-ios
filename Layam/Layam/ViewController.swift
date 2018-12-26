@@ -9,7 +9,9 @@
 import UIKit
 import AVFoundation
 
-class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource{
+class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource, SubscriptionViewControllerDelegate{
+    
+    
     
     
 
@@ -79,6 +81,8 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     var shrutiVolume:Float = 0.5
     var audioPlaying:Bool = false
     
+    var boughtSubscription:Bool = false
+    
     var shrutiMapping = ["A":"a", "A'":"as", "B":"b", "C":"c", "C'":"cs", "D":"d",
                          "D'":"ds", "E":"e", "F":"f", "F'":"fs", "G":"g", "G'":"gs"];
     
@@ -111,6 +115,19 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "ShowSubscription"{
+            let subscriptionViewController = segue.destination as! SubscriptionViewController
+            subscriptionViewController.delegate = self
+        }
+    }
+    
+    func didBuyColorsCollection(collectionIndex: Int) {
+        boughtSubscription = true
+        
+        print("Bought Subscription \(boughtSubscription)");
     }
     
     func setVersionLabel(){
@@ -334,6 +351,11 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         //print("inside bpmclick")
         StopAudio(self)
         let bpm:UILabel = (gesture.view as! UILabel)
+        
+        if bpmSelected == "100"{
+            performSegue(withIdentifier: "ShowSubscription", sender: bpm)
+        }
+        
         //print("Clicked: \(bpm!)")
         bpmSelected = bpm.text!
         bpmSelected = bpmSelected.lowercased()
