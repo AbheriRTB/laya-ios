@@ -17,11 +17,20 @@ protocol SubscriptionViewControllerDelegate {
     
 }
 
+class SubscriptionTableViewCell: UITableViewCell {
+    @IBOutlet weak var cellLabel: UILabel!
+    @IBOutlet weak var cellImage: UIImageView!
+    @IBOutlet weak var detailCellLabel: UILabel!
+    
+}
+
 
 class SubscriptionViewController: UIViewController, UITableViewDelegate, UITableViewDataSource, SKProductsRequestDelegate, SKPaymentTransactionObserver {
     
     
     @IBOutlet weak var tblProducts1: UITableView!
+    @IBOutlet weak var loadingIndicator: UIActivityIndicatorView!
+    
     var delegate: SubscriptionViewControllerDelegate!
     
     var productIDs: Array<String?> = []
@@ -41,12 +50,20 @@ class SubscriptionViewController: UIViewController, UITableViewDelegate, UITable
         tblProducts1.delegate = self
         tblProducts1.dataSource = self
         
+        //tblProducts1.layer.borderWidth = 2.0
+        //tblProducts1.layer.borderColor = UIColor.black.cgColor
+        tblProducts1.backgroundColor=UIColor.clear
+        
         
         // Replace the product IDs with your own values if needed.
         //productIDs.append("iapdemo_extra_colors_col1")
         //productIDs.append("iapdemo_extra_colors_col2")
         productIDs.append("monthly_subscription")
+        productIDs.append("monthly_renewable")
+        productIDs.append("buy_layam")
         
+        loadingIndicator.hidesWhenStopped = true
+        loadingIndicator.startAnimating()
         requestProductInfo()
         
         SKPaymentQueue.default().add(self)
@@ -89,11 +106,13 @@ class SubscriptionViewController: UIViewController, UITableViewDelegate, UITable
     
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "idCellProduct", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "idCellProduct", for: indexPath) as! SubscriptionTableViewCell
         
         let product = productsArray[indexPath.row]
-        cell.textLabel?.text = product?.localizedTitle
-        cell.detailTextLabel?.text = product?.localizedDescription
+        cell.cellLabel?.backgroundColor=UIColor.clear
+        cell.cellLabel?.text = product?.localizedTitle
+        let detail = (product?.localizedDescription)! + " @ " + (product?.price.stringValue)! + " " + (product?.priceLocale.currencyCode)!
+        cell.detailCellLabel?.text = detail
         
         return cell
     }
@@ -161,6 +180,7 @@ class SubscriptionViewController: UIViewController, UITableViewDelegate, UITable
             }
             
             tblProducts1.reloadData()
+            loadingIndicator.stopAnimating()
         }
         else {
             print("There are no products.")

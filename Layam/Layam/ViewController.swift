@@ -352,13 +352,17 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         StopAudio(self)
         let bpm:UILabel = (gesture.view as! UILabel)
         
-        if bpmSelected == "100"{
-            performSegue(withIdentifier: "ShowSubscription", sender: bpm)
-        }
-        
         //print("Clicked: \(bpm!)")
         bpmSelected = bpm.text!
         bpmSelected = bpmSelected.lowercased()
+        
+        if bpmSelected == "70" ||
+           bpmSelected == "90" ||
+           bpmSelected == "100" ||
+           bpmSelected == "110" ||
+           bpmSelected == "120" {
+            performSegue(withIdentifier: "ShowSubscription", sender: bpm)
+        }
         highlightBpm(bpm)
     }
     
