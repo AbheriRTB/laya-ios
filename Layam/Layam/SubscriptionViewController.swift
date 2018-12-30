@@ -50,17 +50,19 @@ class SubscriptionViewController: UIViewController, UITableViewDelegate, UITable
         tblProducts1.delegate = self
         tblProducts1.dataSource = self
         
-        //tblProducts1.layer.borderWidth = 2.0
-        //tblProducts1.layer.borderColor = UIColor.black.cgColor
+        tblProducts1.layer.borderWidth = 1.0
+        tblProducts1.layer.borderColor = UIColor.lightGray.cgColor
         tblProducts1.backgroundColor=UIColor.clear
         
         
         // Replace the product IDs with your own values if needed.
         //productIDs.append("iapdemo_extra_colors_col1")
         //productIDs.append("iapdemo_extra_colors_col2")
-        productIDs.append("monthly_subscription")
+        
+        productIDs.append("weekly_renewable")
         productIDs.append("monthly_renewable")
         productIDs.append("buy_layam")
+        productIDs.append("monthly_subscription")
         
         loadingIndicator.hidesWhenStopped = true
         loadingIndicator.startAnimating()
@@ -152,7 +154,7 @@ class SubscriptionViewController: UIViewController, UITableViewDelegate, UITable
             return
         }
         
-        let actionSheetController = UIAlertController(title: "IAPDemo", message: "What do you want to do?", preferredStyle: UIAlertControllerStyle.actionSheet)
+        let actionSheetController = UIAlertController(title: "Layam Purchase", message: "What do you want to do?", preferredStyle: UIAlertControllerStyle.actionSheet)
         
         let buyAction = UIAlertAction(title: "Buy", style: UIAlertActionStyle.default) { (action) -> Void in
             let payment = SKPayment(product: self.productsArray[self.selectedProductIndex] as! SKProduct!)
