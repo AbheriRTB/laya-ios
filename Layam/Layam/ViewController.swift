@@ -141,7 +141,6 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         
         let shrutiPath = Bundle.main.path(forResource: shrutiFileName, ofType:nil)
         if shrutiPath == nil{
-            showAlert(self, message: "Not Supported")
             return
         }
         let shrutiUrl = URL(fileURLWithPath: shrutiPath!)
@@ -150,7 +149,6 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         //let mridangaFileName = "aditala_a_m_70.mp3"
         let mridangaPath = Bundle.main.path(forResource: mridangaFileName, ofType:nil)
         if mridangaPath == nil{
-            showAlert(self, message: "Not Supported")
             return
         }
         let mridangaUrl = URL(fileURLWithPath: mridangaPath!)
@@ -344,10 +342,26 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     func highlightBpm(_ selectedBpm:UILabel){
         
         for blabel in bpmUILabels{
-            blabel.textColor=UIColor.white
+            if talaSelected == "Tishra Adi"{
+                //For Tishra Adi, only supported BPMs are 80 & 90. Others are not. Hence gray out other BPMs
+                blabel.textColor=UIColor.lightGray
+                if(blabel.text == "80" || blabel.text == "90"){
+                    blabel.textColor=UIColor.white
+                }
+            }else{
+                blabel.textColor=UIColor.white
+            }
+        }
+
+        //For Tishra Adi, only supported BPMs are 80 & 90. Others are not. Hence when user taps on anything
+        //else, don't highglight the BPM in Red
+        if talaSelected=="Tishra Adi" && (selectedBpm.text == "80" || selectedBpm.text == "90"){
+            selectedBpm.textColor=UIColor.red
+        }else if talaSelected != "Tishra Adi"{
+            selectedBpm.textColor=UIColor.red
         }
         
-        selectedBpm.textColor=UIColor.red
+        
     }
     
     // --- TABLE FUNCTIONS
@@ -370,6 +384,13 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         //print("You tapped cell number \(indexPath.row).")
         talaSelected = self.talaList[indexPath.row]
+        
+        /*Call highlightBpm to take care of special case for Tishra Adi
+          Need to be called for all as switching from Tishra to other,
+          the BPMs should be colored White
+        */
+        highlightBpm(getBpmSelected(bpm: bpmSelected))
+        
         StopAudio(self)
     }
     
@@ -444,6 +465,26 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         alertController.addAction(UIAlertAction(title: "Dismiss", style: UIAlertActionStyle.default,handler: nil))
         
         self.present(alertController, animated: true, completion: nil)
+    }
+    
+    func getBpmSelected(bpm:String)->UILabel{
+        
+        switch(bpm){
+        case "70":
+            return Bpm_70
+        case "80":
+            return Bpm_80
+        case "90":
+            return Bpm_90
+        case "100":
+            return Bpm_100
+        case "110":
+            return Bpm_110
+        case "120":
+            return Bpm_120
+        default:
+            return Bpm_80
+        }
     }
     
 }
